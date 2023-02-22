@@ -1,0 +1,65 @@
+{
+  "name": "speedometer_2.1[8]",
+  "cwd": "/home/jake/research/v8_handles_experiments/crossbench/chrome_v112_chrome-direct-gc_default/speedometer_2.1/8",
+  "story": {
+    "name": "speedometer_2.1",
+    "duration": 74.4
+  },
+  "browser": {
+    "label": "chrome-direct-gc_default",
+    "browser": "chrome",
+    "unique_name": "chrome_v112_chrome-direct-gc_default",
+    "app_name": "chrome",
+    "version": "112.0.5572.0",
+    "flags": [
+      "--no-default-browser-check",
+      "--disable-component-update",
+      "--disable-sync",
+      "--no-experiments",
+      "--enable-benchmarking",
+      "--disable-extensions",
+      "--no-first-run",
+      "--disable-background-timer-throttling",
+      "--disable-renderer-backgrounding"
+    ],
+    "js_flags": [],
+    "path": "/home/jake/research/chromium/src/out/direct_handles_release/chrome",
+    "clear_cache_dir": true,
+    "major_version": 112,
+    "log": {
+      "chrome": "/home/jake/research/v8_handles_experiments/crossbench/chrome_v112_chrome-direct-gc_default/speedometer_2.1/8/browser.chrome.log",
+      "stdout": "/home/jake/research/v8_handles_experiments/crossbench/chrome_v112_chrome-direct-gc_default/speedometer_2.1/8/browser.stdout.log",
+      "driver": "/home/jake/research/v8_handles_experiments/crossbench/chrome_v112_chrome-direct-gc_default/speedometer_2.1/8/browser.driver.log"
+    }
+  },
+  "durations": {
+    "browser-setup": 3.302787,
+    "browser-tear_down": 0.222668,
+    "probes-creation": 0.000194,
+    "probes-setup": 0.000171,
+    "probes-start": 7.9e-05,
+    "run": 107.658196,
+    "runner-cooldown": 2.002067
+  },
+  "probes": {
+    "cb.runner.durations": {
+      "json": [
+        "/home/jake/research/v8_handles_experiments/crossbench/chrome_v112_chrome-direct-gc_default/speedometer_2.1/8/cb.runner.durations.json"
+      ]
+    },
+    "cb.runner.log": {
+      "file": [
+        "/home/jake/research/v8_handles_experiments/crossbench/chrome_v112_chrome-direct-gc_default/speedometer_2.1/8/cb.runner.log"
+      ]
+    },
+    "speedometer_2.1": {
+      "file": [
+        "/home/jake/research/v8_handles_experiments/crossbench/chrome_v112_chrome-direct-gc_default/speedometer_2.1/8/speedometer_2.1.json.raw"
+      ],
+      "json": [
+        "/home/jake/research/v8_handles_experiments/crossbench/chrome_v112_chrome-direct-gc_default/speedometer_2.1/8/speedometer_2.1.json"
+      ]
+    }
+  },
+  "errors": []
+}

@@ -1,0 +1,93 @@
+{
+  "cwd": "/home/jake/research/v8_handles_experiments/crossbench/chrome_v112_chrome-direct-no-gc_default",
+  "browser": {
+    "label": "chrome-direct-no-gc_default",
+    "browser": "chrome",
+    "unique_name": "chrome_v112_chrome-direct-no-gc_default",
+    "app_name": "chrome",
+    "version": "112.0.5572.0",
+    "flags": [
+      "--no-default-browser-check",
+      "--disable-component-update",
+      "--disable-sync",
+      "--no-experiments",
+      "--enable-benchmarking",
+      "--disable-extensions",
+      "--no-first-run",
+      "--disable-background-timer-throttling",
+      "--disable-renderer-backgrounding"
+    ],
+    "js_flags": [],
+    "path": "/home/jake/research/chromium/src/out/direct-handles-no-gc/chrome",
+    "clear_cache_dir": true,
+    "major_version": 112
+  },
+  "stories": {
+    "speedometer_2.1": {
+      "cwd": "/home/jake/research/v8_handles_experiments/crossbench/chrome_v112_chrome-direct-no-gc_default/speedometer_2.1",
+      "duration": 74.4,
+      "probes": {
+        "cb.runner.log": null,
+        "cb.runner.durations": {
+          "json": [
+            "/home/jake/research/v8_handles_experiments/crossbench/chrome_v112_chrome-direct-no-gc_default/speedometer_2.1/cb.runner.durations.json"
+          ],
+          "csv": [
+            "/home/jake/research/v8_handles_experiments/crossbench/chrome_v112_chrome-direct-no-gc_default/speedometer_2.1/cb.runner.durations.csv"
+          ]
+        }
+      },
+      "errors": [
+        {
+          "title": "",
+          "trace": [
+            "Traceback (most recent call last):",
+            "  File \"/home/jake/research/chromium/src/third_party/crossbench/crossbench/runner.py\", line 400, in merge",
+            "    results = self._merge_probe_results(probe)",
+            "  File \"/home/jake/research/chromium/src/third_party/crossbench/crossbench/runner.py\", line 466, in _merge_probe_results",
+            "    return probe.merge_repetitions(self)  # pytype: disable=wrong-arg-types",
+            "  File \"/home/jake/research/chromium/src/third_party/crossbench/crossbench/probes/json.py\", line 117, in merge_repetitions",
+            "    source_file = run.results[self].json",
+            "  File \"/home/jake/research/chromium/src/third_party/crossbench/crossbench/probes/results.py\", line 94, in json",
+            "    assert len(self._json_list) == 1",
+            "AssertionError"
+          ],
+          "info_stack": [
+            "browser=chrome_v112_chrome-direct-no-gc_default",
+            "story=Story(name=speedometer_2.1)",
+            "Probe speedometer_2.1 merge results"
+          ]
+        }
+      ]
+    }
+  },
+  "probes": {
+    "cb.runner.log": null,
+    "cb.runner.durations": null
+  },
+  "errors": [
+    {
+      "title": "\"No results for probe='speedometer_2.1'\"",
+      "trace": [
+        "Traceback (most recent call last):",
+        "  File \"/home/jake/research/chromium/src/third_party/crossbench/crossbench/runner.py\", line 400, in merge",
+        "    results = self._merge_probe_results(probe)",
+        "  File \"/home/jake/research/chromium/src/third_party/crossbench/crossbench/runner.py\", line 531, in _merge_probe_results",
+        "    return probe.merge_stories(self)  # pytype: disable=wrong-arg-types",
+        "  File \"/home/jake/research/chromium/src/third_party/crossbench/crossbench/benchmarks/speedometer.py\", line 52, in merge_stories",
+        "    merged = probes_helper.ValuesMerger.merge_json_list(",
+        "  File \"/home/jake/research/chromium/src/third_party/crossbench/crossbench/probes/helper.py\", line 212, in merge_json_list",
+        "    for file in files:",
+        "  File \"/home/jake/research/chromium/src/third_party/crossbench/crossbench/benchmarks/speedometer.py\", line 53, in <genexpr>",
+        "    repetitions_group.results[self].json",
+        "  File \"/home/jake/research/chromium/src/third_party/crossbench/crossbench/probes/results.py\", line 127, in __getitem__",
+        "    raise KeyError(f\"No results for probe='{name}'\")",
+        "KeyError: \"No results for probe='speedometer_2.1'\""
+      ],
+      "info_stack": [
+        "browser=chrome_v112_chrome-direct-no-gc_default",
+        "Probe speedometer_2.1 merge results"
+      ]
+    }
+  ]
+}

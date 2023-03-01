@@ -41,9 +41,11 @@ def process_speedometer(results_file, pexecs, table_name):
                         confidence_interval(data['mean'], data['stddev'], pexecs)))
             f.write(" \\\\\n")
         f.write("\\midrule\n")
-        f.write("Total")
+        f.write("Total ")
         for browser, total in totals.items():
-            f.write("& %.3f " % confidence_interval(total['average'], total['stddev'], pexecs))
+            f.write("& %.3f ± %.6f " % \
+                        (total['average'], \
+                        confidence_interval(total['average'], total['stddev'], pexecs)))
         f.write(" \\\\\n")
 
 def confidence_interval(mean, stddev, num_samples):

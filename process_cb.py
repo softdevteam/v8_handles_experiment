@@ -3,13 +3,12 @@ import sys
 import pprint
 import math
 import os
-from statistics import geometric_mean, stdev
 
-def process_speedometer(results_file, pexecs):
+def process_speedometer(results_file, pexecs, table_name):
     results = {}
-    geomeans = {}
+    totals = {}
 
-    wanted = ['total', 'geomean']
+    wanted = ['total']
     with open(results_file) as f:
         data = json.load(f)
         for browser_name, browser in data.items():
@@ -18,12 +17,14 @@ def process_speedometer(results_file, pexecs):
                 if len(bm.split('/')) > 2 or not any([x in bm for x in wanted]):
                     continue
 
-                if bm == "geomean":
-                    geomeans[browser_name] = runs['geomean']
+                if bm == "total":
+                    totals[browser_name] = runs
                     continue
 
                 if bm not in results:
                     results[bm] = {}
+
+                assert len(runs['values']) == pexecs
 
                 results[bm][browser_name] = {
                     'mean' : runs['average'],
@@ -31,11 +32,7 @@ def process_speedometer(results_file, pexecs):
                     'stddev' : runs['stddev'],
                 }
 
-    gen_table(results, geomeans, pexecs)
-
-
-def gen_table(results, geomeans, pexecs):
-    with open("table_no_gc.tex", "w") as f:
+    with open(table_name, "w") as f:
         for bm, browsers in results.items():
             f.write("%s " % bm)
             for b, data in browsers.items():
@@ -43,9 +40,10 @@ def gen_table(results, geomeans, pexecs):
                         (data['mean'], \
                         confidence_interval(data['mean'], data['stddev'], pexecs)))
             f.write(" \\\\\n")
-        f.write("geometric mean ")
-        for browser, gmean in geomeans.items():
-            f.write("& %.3f " % gmean)
+        f.write("\\midrule\n")
+        f.write("Total")
+        for browser, total in totals.items():
+            f.write("& %.3f " % confidence_interval(total['average'], total['stddev'], pexecs))
         f.write(" \\\\\n")
 
 def confidence_interval(mean, stddev, num_samples):
@@ -53,7 +51,9 @@ def confidence_interval(mean, stddev, num_samples):
     return Z * (stddev / math.sqrt(num_samples))
 
 if __name__ == "__main__":
-    results = "crossbench_no_gc/speedometer_2.1.json"
-    process_speedometer(results, 10)
+    file = os.path.join(sys.argv[1], "speedometer_2.1.json")
+    pexecs = int(sys.argv[2])
+    table_name = sys.argv[3]
+    process_speedometer(file, pexecs, table_name)
 
 

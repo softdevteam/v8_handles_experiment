@@ -87,10 +87,10 @@ class Results:
                 for cmd, ltx in self.latex_names.items():
                     cmds.write("\\newcommand\\%s{\\textrm{%s}\\xspace}\n" % (cmd, ltx))
 
-            cmds.write("\n% speedometer story percentage diffs\n")
+            cmds.write("\n%% %s story percentage diffs\n" % self.configuration)
             for bm in self.handles:
                 # Put the percent diff in the commands
-                cmds.write('\\newcommand\\%s%spdiff{%.2f\\xspace}\n' % (\
+                cmds.write('\\newcommand\\%s%spdiff{%.2f\\%%\\xspace}\n' % (\
                         self.configuration, \
                         bm, \
                         (pdiff(float(self.handles[bm]['mean']),

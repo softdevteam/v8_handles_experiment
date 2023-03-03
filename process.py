@@ -103,7 +103,7 @@ class Results:
                 if "total" in bm:
                     label = "Total "
                     table.write("\\midrule\n")
-                table.write("%s & %.3f ± %.4f & %.3f ± %.4f  \\\\\n" % (\
+                table.write("%s & %.3f \\textsubscript{± %.4f} & %.3f \\textsubscript{± %.4f}  \\\\\n" % (\
                         label, \
                         self.handles[bm]['mean'], \
                         confidence_interval(self.handles[bm]['mean'],

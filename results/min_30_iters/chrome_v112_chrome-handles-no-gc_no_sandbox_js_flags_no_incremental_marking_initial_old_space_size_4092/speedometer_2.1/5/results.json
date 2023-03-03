@@ -1,0 +1,69 @@
+{
+  "name": "speedometer_2.1[5]",
+  "cwd": "/home/jake/chromium/src/third_party/crossbench/results/2023-03-01_202032_speedometer_2.1/chrome_v112_chrome-handles-no-gc_no_sandbox_js_flags_no_incremental_marking_initial_old_space_size_4092/speedometer_2.1/5",
+  "story": {
+    "name": "speedometer_2.1",
+    "duration": 74.4
+  },
+  "browser": {
+    "label": "chrome-handles-no-gc_no_sandbox_js_flags=no_incremental_marking initial_old_space_size=4092",
+    "browser": "chrome",
+    "unique_name": "chrome_v112_chrome-handles-no-gc_no_sandbox_js_flags_no_incremental_marking_initial_old_space_size_4092",
+    "app_name": "chrome",
+    "version": "112.0.5572.0",
+    "flags": [
+      "--no-default-browser-check",
+      "--disable-component-update",
+      "--disable-sync",
+      "--no-experiments",
+      "--enable-benchmarking",
+      "--disable-extensions",
+      "--no-first-run",
+      "--disable-background-timer-throttling",
+      "--disable-renderer-backgrounding",
+      "--no-sandbox",
+      "--js-flags=--no-incremental-marking --initial-old-space-size=4092"
+    ],
+    "js_flags": [
+      "--no-incremental-marking --initial-old-space-size=4092"
+    ],
+    "path": "/home/jake/chromium/src/out/handles/chrome",
+    "clear_cache_dir": true,
+    "major_version": 112,
+    "log": {
+      "chrome": "/home/jake/chromium/src/third_party/crossbench/results/2023-03-01_202032_speedometer_2.1/chrome_v112_chrome-handles-no-gc_no_sandbox_js_flags_no_incremental_marking_initial_old_space_size_4092/speedometer_2.1/5/browser.chrome.log",
+      "stdout": "/home/jake/chromium/src/third_party/crossbench/results/2023-03-01_202032_speedometer_2.1/chrome_v112_chrome-handles-no-gc_no_sandbox_js_flags_no_incremental_marking_initial_old_space_size_4092/speedometer_2.1/5/browser.stdout.log",
+      "driver": "/home/jake/chromium/src/third_party/crossbench/results/2023-03-01_202032_speedometer_2.1/chrome_v112_chrome-handles-no-gc_no_sandbox_js_flags_no_incremental_marking_initial_old_space_size_4092/speedometer_2.1/5/browser.driver.log"
+    }
+  },
+  "durations": {
+    "browser-setup": 3.880947,
+    "browser-tear_down": 0.298672,
+    "probes-creation": 0.000134,
+    "probes-setup": 0.000103,
+    "probes-start": 5.8e-05,
+    "run": 130.278522,
+    "runner-cooldown": 2.002056
+  },
+  "probes": {
+    "cb.runner.durations": {
+      "json": [
+        "/home/jake/chromium/src/third_party/crossbench/results/2023-03-01_202032_speedometer_2.1/chrome_v112_chrome-handles-no-gc_no_sandbox_js_flags_no_incremental_marking_initial_old_space_size_4092/speedometer_2.1/5/cb.runner.durations.json"
+      ]
+    },
+    "cb.runner.log": {
+      "file": [
+        "/home/jake/chromium/src/third_party/crossbench/results/2023-03-01_202032_speedometer_2.1/chrome_v112_chrome-handles-no-gc_no_sandbox_js_flags_no_incremental_marking_initial_old_space_size_4092/speedometer_2.1/5/cb.runner.log"
+      ]
+    },
+    "speedometer_2.1": {
+      "file": [
+        "/home/jake/chromium/src/third_party/crossbench/results/2023-03-01_202032_speedometer_2.1/chrome_v112_chrome-handles-no-gc_no_sandbox_js_flags_no_incremental_marking_initial_old_space_size_4092/speedometer_2.1/5/speedometer_2.1.json.raw"
+      ],
+      "json": [
+        "/home/jake/chromium/src/third_party/crossbench/results/2023-03-01_202032_speedometer_2.1/chrome_v112_chrome-handles-no-gc_no_sandbox_js_flags_no_incremental_marking_initial_old_space_size_4092/speedometer_2.1/5/speedometer_2.1.json"
+      ]
+    }
+  },
+  "errors": []
+}

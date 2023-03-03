@@ -1,0 +1,68 @@
+{
+  "cwd": "/home/jake/chromium/src/third_party/crossbench/results/2023-03-01_202032_speedometer_2.1/chrome_v112_chrome-handles-no-gc_no_sandbox_js_flags_no_incremental_marking_initial_old_space_size_4092",
+  "browser": {
+    "label": "chrome-handles-no-gc_no_sandbox_js_flags=no_incremental_marking initial_old_space_size=4092",
+    "browser": "chrome",
+    "unique_name": "chrome_v112_chrome-handles-no-gc_no_sandbox_js_flags_no_incremental_marking_initial_old_space_size_4092",
+    "app_name": "chrome",
+    "version": "112.0.5572.0",
+    "flags": [
+      "--no-default-browser-check",
+      "--disable-component-update",
+      "--disable-sync",
+      "--no-experiments",
+      "--enable-benchmarking",
+      "--disable-extensions",
+      "--no-first-run",
+      "--disable-background-timer-throttling",
+      "--disable-renderer-backgrounding",
+      "--no-sandbox",
+      "--js-flags=--no-incremental-marking --initial-old-space-size=4092"
+    ],
+    "js_flags": [
+      "--no-incremental-marking --initial-old-space-size=4092"
+    ],
+    "path": "/home/jake/chromium/src/out/handles/chrome",
+    "clear_cache_dir": true,
+    "major_version": 112
+  },
+  "stories": {
+    "speedometer_2.1": {
+      "cwd": "/home/jake/chromium/src/third_party/crossbench/results/2023-03-01_202032_speedometer_2.1/chrome_v112_chrome-handles-no-gc_no_sandbox_js_flags_no_incremental_marking_initial_old_space_size_4092/speedometer_2.1",
+      "duration": 74.4,
+      "probes": {
+        "speedometer_2.1": {
+          "json": [
+            "/home/jake/chromium/src/third_party/crossbench/results/2023-03-01_202032_speedometer_2.1/chrome_v112_chrome-handles-no-gc_no_sandbox_js_flags_no_incremental_marking_initial_old_space_size_4092/speedometer_2.1/speedometer_2.1.json"
+          ],
+          "csv": [
+            "/home/jake/chromium/src/third_party/crossbench/results/2023-03-01_202032_speedometer_2.1/chrome_v112_chrome-handles-no-gc_no_sandbox_js_flags_no_incremental_marking_initial_old_space_size_4092/speedometer_2.1/speedometer_2.1.csv"
+          ]
+        },
+        "cb.runner.log": null,
+        "cb.runner.durations": {
+          "json": [
+            "/home/jake/chromium/src/third_party/crossbench/results/2023-03-01_202032_speedometer_2.1/chrome_v112_chrome-handles-no-gc_no_sandbox_js_flags_no_incremental_marking_initial_old_space_size_4092/speedometer_2.1/cb.runner.durations.json"
+          ],
+          "csv": [
+            "/home/jake/chromium/src/third_party/crossbench/results/2023-03-01_202032_speedometer_2.1/chrome_v112_chrome-handles-no-gc_no_sandbox_js_flags_no_incremental_marking_initial_old_space_size_4092/speedometer_2.1/cb.runner.durations.csv"
+          ]
+        }
+      },
+      "errors": []
+    }
+  },
+  "probes": {
+    "speedometer_2.1": {
+      "json": [
+        "/home/jake/chromium/src/third_party/crossbench/results/2023-03-01_202032_speedometer_2.1/chrome_v112_chrome-handles-no-gc_no_sandbox_js_flags_no_incremental_marking_initial_old_space_size_4092/speedometer_2.1.json"
+      ],
+      "csv": [
+        "/home/jake/chromium/src/third_party/crossbench/results/2023-03-01_202032_speedometer_2.1/chrome_v112_chrome-handles-no-gc_no_sandbox_js_flags_no_incremental_marking_initial_old_space_size_4092/speedometer_2.1.csv"
+      ]
+    },
+    "cb.runner.log": null,
+    "cb.runner.durations": null
+  },
+  "errors": []
+}

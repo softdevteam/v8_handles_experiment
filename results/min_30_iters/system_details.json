@@ -1,0 +1,33 @@
+{
+  "machine": "x86_64",
+  "os": {
+    "system": "Linux",
+    "release": "4.19.0-20-amd64",
+    "version": "#1 SMP Debian 4.19.235-1 (2022-03-17)",
+    "platform": "Linux-4.19.0-20-amd64-x86_64-with-glibc2.17"
+  },
+  "python": {
+    "version": "3.8.10+chromium.25",
+    "bits": "64"
+  },
+  "CPU": {
+    "physical cores": 4,
+    "logical cores": 4,
+    "usage": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "total usage": 7.0,
+    "system load": [
+      0.26,
+      0.77,
+      0.91
+    ],
+    "max frequency": "3700.00Mhz",
+    "min frequency": "800.00Mhz",
+    "current frequency": "3701.02Mhz"
+  },
+  "lscpu": "Architecture:        x86_64\nCPU op-mode(s):      32-bit, 64-bit\nByte Order:          Little Endian\nAddress sizes:       39 bits physical, 48 bits virtual\nCPU(s):              4\nOn-line CPU(s) list: 0-3\nThread(s) per core:  1\nCore(s) per socket:  4\nSocket(s):           1\nNUMA node(s):        1\nVendor ID:           GenuineIntel\nCPU family:          6\nModel:               158\nModel name:          Intel(R) Xeon(R) CPU E3-1240 v6 @ 3.70GHz\nStepping:            9\nCPU MHz:             3700.797\nCPU max MHz:         3700.0000\nCPU min MHz:         800.0000\nBogoMIPS:            7392.00\nVirtualization:      VT-x\nL1d cache:           32K\nL1i cache:           32K\nL2 cache:            256K\nL3 cache:            8192K\nNUMA node0 CPU(s):   0-3\nFlags:               fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf tsc_known_freq pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb invpcid_single pti tpr_shadow vnmi flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 hle avx2 smep bmi2 erms invpcid rtm mpx rdseed adx smap clflushopt intel_pt xsaveopt xsavec xgetbv1 xsaves dtherm arat pln pts hwp hwp_notify hwp_act_window hwp_epp\n"
+}

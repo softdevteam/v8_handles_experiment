@@ -1,0 +1,69 @@
+{
+  "name": "speedometer_2.1[22]",
+  "cwd": "/home/jake/handles_numbers/no_compact_with_stack_30_iters/chrome_v112_chrome-handles-no-compact_no_sandbox_js_flags_no_compact_with_stack/speedometer_2.1/22",
+  "story": {
+    "name": "speedometer_2.1",
+    "duration": 74.4
+  },
+  "browser": {
+    "label": "chrome-handles-no-compact_no_sandbox_js_flags=no_compact_with_stack",
+    "browser": "chrome",
+    "unique_name": "chrome_v112_chrome-handles-no-compact_no_sandbox_js_flags_no_compact_with_stack",
+    "app_name": "chrome",
+    "version": "112.0.5572.0",
+    "flags": [
+      "--no-default-browser-check",
+      "--disable-component-update",
+      "--disable-sync",
+      "--no-experiments",
+      "--enable-benchmarking",
+      "--disable-extensions",
+      "--no-first-run",
+      "--disable-background-timer-throttling",
+      "--disable-renderer-backgrounding",
+      "--no-sandbox",
+      "--js-flags=--no-compact-with-stack"
+    ],
+    "js_flags": [
+      "--no-compact-with-stack"
+    ],
+    "path": "/home/jake/chromium/src/out/handles_full_gc/chrome",
+    "clear_cache_dir": true,
+    "major_version": 112,
+    "log": {
+      "chrome": "/home/jake/handles_numbers/no_compact_with_stack_30_iters/chrome_v112_chrome-handles-no-compact_no_sandbox_js_flags_no_compact_with_stack/speedometer_2.1/22/browser.chrome.log",
+      "stdout": "/home/jake/handles_numbers/no_compact_with_stack_30_iters/chrome_v112_chrome-handles-no-compact_no_sandbox_js_flags_no_compact_with_stack/speedometer_2.1/22/browser.stdout.log",
+      "driver": "/home/jake/handles_numbers/no_compact_with_stack_30_iters/chrome_v112_chrome-handles-no-compact_no_sandbox_js_flags_no_compact_with_stack/speedometer_2.1/22/browser.driver.log"
+    }
+  },
+  "durations": {
+    "browser-setup": 3.873327,
+    "browser-tear_down": 0.274866,
+    "probes-creation": 0.000121,
+    "probes-setup": 0.0001,
+    "probes-start": 5.5e-05,
+    "run": 129.261583,
+    "runner-cooldown": 2.00205
+  },
+  "probes": {
+    "cb.runner.durations": {
+      "json": [
+        "/home/jake/handles_numbers/no_compact_with_stack_30_iters/chrome_v112_chrome-handles-no-compact_no_sandbox_js_flags_no_compact_with_stack/speedometer_2.1/22/cb.runner.durations.json"
+      ]
+    },
+    "cb.runner.log": {
+      "file": [
+        "/home/jake/handles_numbers/no_compact_with_stack_30_iters/chrome_v112_chrome-handles-no-compact_no_sandbox_js_flags_no_compact_with_stack/speedometer_2.1/22/cb.runner.log"
+      ]
+    },
+    "speedometer_2.1": {
+      "file": [
+        "/home/jake/handles_numbers/no_compact_with_stack_30_iters/chrome_v112_chrome-handles-no-compact_no_sandbox_js_flags_no_compact_with_stack/speedometer_2.1/22/speedometer_2.1.json.raw"
+      ],
+      "json": [
+        "/home/jake/handles_numbers/no_compact_with_stack_30_iters/chrome_v112_chrome-handles-no-compact_no_sandbox_js_flags_no_compact_with_stack/speedometer_2.1/22/speedometer_2.1.json"
+      ]
+    }
+  },
+  "errors": []
+}
